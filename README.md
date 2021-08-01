@@ -1,11 +1,5 @@
 <div align="center"> 
 <h1 align="center">Bilibili助手</h1>
-<img src="https://img.shields.io/github/issues/tonglevae/BilibiliTask?color=green">
-<img src="https://img.shields.io/github/stars/tonglevae/BilibiliTask?color=yellow">
-<img src="https://img.shields.io/github/forks/tonglevae/BilibiliTask?color=orange">
-<img src="https://img.shields.io/github/license/tonglevae/BilibiliTask?color=ff69b4">
-<img src="https://img.shields.io/github/search/tonglevae/BilibiliTask/main?color=blue">
-</div>
 
 # 简介
 （原项目来自“srcrs”，已删）
