@@ -7,8 +7,8 @@
 <img src="https://img.shields.io/github/search/srcrs/BilibiliTask/main?color=blue">
 </div>
 
-# 简介abc
-
+# 简介
+（原项目来自“srcrs”，已删）
 👯✨😄📫
 
 哔哩哔哩(`B`站)自动完成每日任务，
@@ -61,7 +61,7 @@
 
 ## 1.fork本项目
 
-项目地址：[srcrs/BilibiliTask](https://github.com/srcrs/BilibiliTask)
+项目地址：[tonglevae/BilibiliTask](https://github.com/tonglevae/BilibiliTask)
 
 ## 2.准备需要的参数
 
@@ -148,7 +148,7 @@ manga: true
 upLive: 477137547
 ``` 
 
-如实在没有想给他投币的up主，可以考虑把我填上哦 `477137547` 😄
+如实在没有想给他投币的up主，可以考虑把我填上哦 `452907741` 😄
 
 ## 2.推送运行结果到微信
 
@@ -197,152 +197,3 @@ Name | Value
 DINGTALK | https://oapi.dingtalk.com/robot/send?access_token=064559acaa666c43d5ba197656594f288f3acef9a64f4f43218beddd1c7b7050
 
 ![](img/获取钉钉Webhook.gif)
-
-# 如何拉取最新代码
-
-## 方法一
-
-在`github`安装`pull`，会自动帮你检测上游仓库，并帮助你更新代码
-
-地址在这: https://github.com/apps/pull
-
-由于添加有配置文件`config.yml`，有可能会覆盖你自定义的`config.yml`，需要注意。
-
-## 方法二
-
-1、查看是否有源头仓库的别名和地址
-
-```sh
-$ git remote -v
-origin  https://github.com/cmdcs/BilibiliTask.git (fetch)
-origin  https://github.com/cmdcs/BilibiliTask.git (push)
-upstream  https://github.com/srcrs/BilibiliTask (fetch)
-upstream  https://github.com/srcrs/BilibiliTask (push)
-```
-
-`origin`是你的仓库地址，`upstream`是你`fork`的源头仓库。通常第一次是没有`upstream`的。
-
-2、添加源头仓库
-
-```sh
-git remote add upstream https://github.com/srcrs/BilibiliTask
-```
-
-3、把上游仓库`main`分支的更新拉取到本地
-
-```sh
-git pull upstream main
-```
-
-4、将更新后的代码推送到你的仓库
-
-```sh
-git push origin main 
-```
-
-由于添加有配置文件`config.yml`，有可能会覆盖你自定义的`config.yml`，需要注意。
-
-# 更新日志
-
-## 2020-11-28
-
-+ 去除UA(貌似是没有影响的)
-
-+ 设置API请求间的缓冲时间(5 秒钟)
-
-## 2020-11-22
-
-感谢[东酱](https://github.com/qq523407234)在此项目中做出的巨大贡献。
-
-+ 增加`push+`推送方式
-
-+ 将项目管理工具改为`gradle`
-
-+ 优化代码结构，优化日志输出格式(高亮)
-
-## 2020-11-17
-
-+ 增加钉钉推送方式
-
-+ 优化投币给视频的策略 , 自定义`up`主视频 > 当前用户动态列表中的视频投稿 > 随机视频列表
-
-+ 投币后等待`1-2`秒钟 , 降低访问投币`API`的速度
-
-+ 优化模拟观看视频 , 获取视频时常，随机上报视频观看进度
-
-+ 优化日志输出，提示更加友好，更加贴近用户(如增加了还剩多少天升级的提示)
-
-+ 增加账号失效提醒(发送到微信或者钉钉)
-
-## 2020-11-05
-
-+ 根据阿里巴巴代码规范优化代码
-
-+ 增加用户标识配置项
-
-## 2020-11-03
-
-+ 将自动使用B币卷开关，更改为自动配置用途，可以选择不使用、充电、兑换金瓜子。
-
-+ 增加B币卷兑换金瓜子功能
-
-## 2020-10-22
-
-+ 增加用server酱推送运行结果到微信功能
-
-## 2020-10-19
-
-+ 增加年度大会员每月`1`号领取`B`币卷
-
-+ 月底自动用`B`币卷给自己充电
-
-+ 在配置项中添加是否月底用`B`币卷给自己充电开关，默认开启
-
-由于我本身不是年度大会员，无法测试是否可以正常领取年度大会员权益和`B`币卷，
-出错的时候麻烦给我提一个`issues`，我会及时解决的。
-
-## 2020-10-17
-
-+ 优化日志显示
-
-+ 增加账户失效提醒
-
-账户失效会导致任务流运行失败，github会下发运行失败邮件提醒。
-
-## 2020-10-13
-
-+ 重构代码，功能不变
-
-+ 采用反射实现自动加载`task`包功能任务代码。
-
-+ 加入配置文件，用户可自定义一些配置
-
-## 2020-10-08
-
-+ 增加自动送出即将过期的礼物
-
-+ 增加漫画`APP`签到
-
-+ 增加一些`api`
-
-## 2020-10-07
-
-+ 增添银瓜子自动兑换硬币功能
-
-## 2020-10-06
-
-+ 增添B站直播签到
-
-+ 继续增添`API`
-
-## 2020-10-05
-
-+ 完成了自动获取经验功能
-
-每日登录、每日观看视频、每日投币、每日分享
-
-+ 完善对接`api`接口
-
-# 参考项目
-
-[happy888888/BiliExp](https://github.com/happy888888/BiliExp)
